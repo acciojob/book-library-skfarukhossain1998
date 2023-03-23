@@ -1,16 +1,78 @@
 <!DOCTYPE html>
-
 <html>
+  <head>
+    <title>Book Library</title>
+    <style>
+      body {
+        background-color: #f8f8f8;
+      }
 
-<head>
-	<link rel="stylesheet" href="styles.css">
-</head>
+      .book-library {
+        max-width: 800px;
+		  box-shadow:5px;
+        margin: 0 auto;
+        background-color: #ffffff;
+        padding: 20px;
+      }
+		h1{
+			text-align:center;
+		}
 
-<body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
+      .book {
+        display: inline-block;
+        width: 200px;
+        margin: 10px;
+        text-align: center;
+      }
 
-</body>
+      .book img {
+        width: 150px;
+        height: 200px;
+        object-fit: cover;
+        margin-bottom: 10px;
+      }
 
+      .book h2 {
+        margin: 0;
+        font-size: 1.2rem;
+      }
+
+      .book .author {
+        color: #777777;
+      }
+
+      .book .price-block {
+        background-color: #2ecc71;
+        color: #ffffff;
+        padding: 5px 10px;
+        border-radius: 5px;
+        margin-top: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="book-library">
+		<h1>Book Library</h1>
+      <div class="book">
+        <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Spy-in-the-Amber-by-Manohar-Malgonkar.jpg" alt="Spy in the Amber">
+        <h2>Spy in the Amber</h2>
+        <p class="author">Author Name</p>
+        <div class="price-block">$10</div>
+      </div>
+
+      <div class="book">
+        <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Sacred-Games-by-Vikram-Chandra.jpg" alt="Scared Games">
+        <h2>Scared Games</h2>
+        <p class="author">Author Name</p>
+        <div class="price-block">$15</div>
+      </div>
+
+      <div class="book">
+        <img src="https://www.bookgeeks.in/wp-content/uploads/2018/01/Byomkesh-Bakshi-by-Sharadindu-Bandyopadhyay.jpg" alt="Byomkesh Bakshi">
+        <h2>Byomkesh Bakshi</h2>
+        <p class="author">Author Name</p>
+        <div class="price-block">$12</div>
+      </div>
+    </div>
+  </body>
 </html>
